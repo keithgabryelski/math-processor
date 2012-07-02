@@ -1,0 +1,45 @@
+Code base on (stolen from):
+ + Jonas Raoni Soares Silva
+ @ http://jsfromhell.com/classes/math-processor [rev. #1]
+
+operators
+    + add
+    - subtract
+    % modulo
+    / divide
+    * multiply
+    ^ power
+    > greater than
+    < less then
+    = equal to
+    ~ not equal to
+
+functions:
+    div(a, b)
+    round(a, b)
+    if(a, b, c)
+    fra(a)
+    min(n1, n2, n3 ...)
+    max(n1, n2, n3 ...)
+    sum(n1, n2, n3 ...)
+    average(n1, n2, n3 ...)
+    wma(n1, n2, n3 ...)
+    ema(a)
+    isnan(a)
+    isfinite(a)
+    number(a)
+
+identifiers:
+    infinity
+    nan
+    true
+    false
+
+alert(new MathProcessor().parse('10 + 1'))
+alert(new MathProcessor().parse('10 + 3 * 5 - 1'))
+alert(new MathProcessor().parse('(10 + 3) * 5 - 1'))
+alert(new MathProcessor().parse('3.1415/2'))
+alert(new MathProcessor().parse('min(1,2,3,4)'))
+alert(new MathProcessor().parse('max(1,2*2,3,4*7)'))
+alert(new MathProcessor().parse('max(1,2,3,4)'))
+alert(new MathProcessor().parse('fra(73.2)'))
